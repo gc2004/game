@@ -20,7 +20,7 @@ public:
         if (left) this->pos.x += -SPEED * dt;
         if (right) this->pos.x += SPEED * dt;
 
-        if (IsMouseButtonDown(MOUSE_BUTTON_LEFT)) {
+        if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
             Rectangle mouse = {static_cast<float>(GetMouseX()),
                                static_cast<float>(GetMouseY()), 0.0, 0.0};
 
